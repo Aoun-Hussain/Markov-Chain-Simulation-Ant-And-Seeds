@@ -1,29 +1,4 @@
 /*
-Author: Aoun Hussain
-Class: ECE 6122-A
-Last Date Modified: Tue, Oct 12, 2021
-Description: This is the cpp source file for the solution of problem 1, lab 2.
-             This source file simulates the random walk of an ant on a 5x5 grid
-             where it picks seeds from the bottom row and drops it on the first
-             row. The ant stops walking when all the seeds from the bottom row
-             has been placed in the top row. The program uses concurrent threads
-             to run this simulation multiple times until the average number of
-             ant's moves per simulation converges to a number with 6 decimal places.
-             The program then outputs the number of threads created, average number
-             of ant's moves, and the number of simulations/run, in the output
-             file ProblemOne.txt.
-
-             The markov chain based simulation in mutil-threading takes approximately
-             5 seconds to run a total of 1700 times with an expected 430.xxxxxx moves
-             per simulation/run.
-
-Instructions for Compiling:
-            Please use the following command to compile without errors on Pace-Ice:
-
-            "g++ -std=c++17 -lpthread  Lab2_Problem1.cpp -o test1"
-*/
-
-/*
  References:
      https://www.cplusplus.com/reference/thread/thread/operator=/
      https://www.geeksforgeeks.org/rounding-floating-point-number-two-decimal-places-c-c/
